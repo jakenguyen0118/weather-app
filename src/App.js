@@ -26,7 +26,7 @@ function App() {
 			<div className='location-form'>
 				<Form handleSubmit={handleSubmit} />
 			</div>
-			<Weather forecast={weather} />
+			{weather.main ? <Weather weather={weather} /> : null}
 		</div>
 	)
 }
